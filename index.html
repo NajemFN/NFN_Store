@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="icon" type="image/jpeg" href="Images/favicon.jpg">
+    <meta charset="UTF-8">
+    <title>NFN_Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NFN_Store</h1>
+        <hr>
+        <nav>
+            <a href="snoep.html"><button class="nav-button">🏠 Snoep</button></a>
+            <!-- Hoesjes knop verwijderd -->
+            <button class="nav-button" id="toggleButton">🌓 Toggle</button>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section class="welcome">
+            <h2>Welkom bij NFN_Store</h2>
+            <p>
+                Ben jij op zoek naar de lekkerste snoepjes, drankjes, chocolade en koekjes die 100% Halal zijn? Dan ben je op het juiste adres!<br><br>
+                Wij selecteren alleen de beste producten zonder gelatine van dierlijke oorsprong of andere niet-halal ingrediënten. Geniet met een gerust hart van al het lekkers dat wij aanbieden.
+            </p>
+            <ul>
+                <li>100% Halal gecertificeerd</li>
+                <li>Heerlijke smaken voor jong en oud</li>
+                <li>Snel geleverd bij jou thuis</li>
+            </ul>
+            <p><strong>Proef het verschil en email me vandaag nog!</strong></p>
+            <a href="mailto:najemabla24@gmail.com">
+                <button class="email-button">Email Me</button>
+            </a>
+        </section>
+    </main>
+    <script>
+        const button = document.getElementById('toggleButton');
+        let isGray = false;
+        button.addEventListener('click', () => {
+            document.body.style.backgroundColor = isGray ? 'white' : 'lightgray';
+            isGray = !isGray;
+        });
+    </script>
+</body>
+</html>

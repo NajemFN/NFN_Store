@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="icon" type="image/jpeg" href="Images/favicon.jpg">
+    <meta charset="UTF-8">
+    <title>NFN_Store | Snoep</title>
+    <link rel="stylesheet" href="snoep.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍬 Snoep</h1>
+    <hr>
+
+    <div class="nav-buttons">
+      <a href="index.html"><button class="button">🏠 Home</button></a>
+      <button class="button" id="toggleButton">🌓 Toggle</button>
+    </div>
+
+    <hr>
+  </header>
+
+  <main>
+
+    <!-- Producten -->
+    <div class="product">
+      <img src="Images/Haribo Dragibus Soft.webp" alt="Haribo Dragibus Soft">
+      <div class="description">
+        <h3>Haribo Dragibus Soft</h3>
+        <p>100 gram voor €1,20</p>
+        <p class="prijs-aanbieding">1000 gram voor €12,00</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="Images/Haribo Strawberry.webp" alt="Haribo Aardbeien">
+      <div class="description">
+        <h3>Haribo Aardbeien</h3>
+        <p>100 gram voor €1,20</p>
+        <p class="prijs-aanbieding">1000 gram voor €12,00</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="Images/Haribo Smurfen.webp" alt="Haribo Smurfen">
+      <div class="description">
+        <h3>Haribo Smurfen</h3>
+        <p>100 gram voor €1,20</p>
+        <p class="prijs-aanbieding">1000 gram voor €12,00</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="Images/Haribo Cola.webp" alt="Haribo Cola">
+      <div class="description">
+        <h3>Haribo Cola</h3>
+        <p>100 gram voor €1,20</p>
+        <p class="prijs-aanbieding">1000 gram voor €12,00</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="Images/Haribo Picco Bella.webp" alt="Haribo Pico Balla">
+      <div class="description">
+        <h3>Haribo Pico Balla</h3>
+        <p>100 gram voor €1,20</p>
+        <p class="prijs-aanbieding">1000 gram voor €12,00</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="Images/Lollys.webp" alt="Lollys">
+      <div class="description">
+        <h3>Chupa Chups Lollys</h3>
+        <p>€0,70 per stuk</p>
+        <p class="prijs-aanbieding">€0,50 per stuk bij meerdere</p>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    const button = document.getElementById('toggleButton');
+    let isGray = false;
+
+    button.addEventListener('click', () => {
+      document.body.style.backgroundColor = isGray ? 'white' : 'lightgray';
+      isGray = !isGray;
+    });
+  </script>
+
+</body>
+</html>
